@@ -102,18 +102,72 @@ body {
   fill: currentColor;
 }
 
+.page {
+	//background-image: url(../img/bg/bg-1.jpg);
+	
+	background-position: center top;
+	background-attachment: fixed;
 
+}
+
+.page-bg-1 {
+	background-image: url(../img/bg/1.jpg);
+}
+
+
+.page-bg-2 {
+	background-image: url(../img/bg/Ed3KNhpWAAAaE-B.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.page-bg-3 {
+	background-image: url(../img/bg/bg-3.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.page-bg-4 {
+	background-image: url(../img/bg/bg-1.jpg);
+}
+.page-bg-5 {
+	background-image: url(../img/bg/f3a4df554097fe26cdb8cb8aae1cbc4e.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.page-bg-6 {
+	background-image: url(../img/bg/nastol.com.ua-136508.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.page-bg-7 {
+	background-image: url(../img/bg/3169690.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+.top__inner {
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	color: #fff;
+}
 
 .top {
 	padding-top: 25px;
-	background-color: #242424;
-	background-image: url(../img/1612469767_157-p-fon-dlya-fotoshopa-serie-tona-183.jpg);
+	
+	
 	//background-image: url(../img/20171016075531-E77-126_HDV2-171024124033.jpg);
-	background-position: top center;
+
+	background-size: cover;
 }
 
-.top__inner {
+.top__inner { 
 	    height: 300px;
+	    padding-top: 80px;
 }
 
 .nav {
@@ -163,9 +217,15 @@ body {
 
 .name {
 	position: relative;
-	top: 70px;
-	overflow: hidden;
+  padding-left: 130px;
 	z-index: 10;
+	//background-color: rgba(0,0,0, 0.2);
+}
+
+#servicesList {
+	position: absolute;
+	top: 10px;
+	right: 30px;
 }
 
 .box-sh,.circle-1,.circle-2,.circle-3,.circle-4,.cols,.line,.line-d,.top-img {
@@ -177,6 +237,10 @@ body {
 	img {
 		width: 500px;
 	}
+}
+
+.mobilePanel {
+	padding-top: 40px;
 }
 
 .step,.step__number {
@@ -286,6 +350,7 @@ button,hr,input {
 	line-height: 60px;
 	font-weight: 300;
 	font-family: pantonlight;
+	letter-spacing: 2px;
 }
 
 .large-text,.step__name strong {
@@ -423,13 +488,12 @@ button,hr,input {
 
 .carousel-item {
 	min-height: 570px;
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 #carouselExampleIndicators {
 	margin-top: 30px;
 	margin-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .ya-share2 {
@@ -441,17 +505,29 @@ button,hr,input {
 } 
 
 .first-slide {
-	background-image: url(../img/c53ced7f9d1707dde08b960251e842a4.jpg); 
+	//background-image: url(../img/c53ced7f9d1707dde08b960251e842a4.jpg);  
+}
+
+.carousel-item .container {
+	background: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 630px;
 }
 
 .box-opacity {
-	background: rgba(255, 255, 255, 0.85);
+
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
 .contacts-footer {
-	background-color: #ddd !important;
+	background-color: #fff !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	color: #fff;
 }
 
 .dark-slide {
@@ -471,6 +547,40 @@ button,hr,input {
 	    margin-top: -25px;
 	    background: no-repeat 50% 50% / cover;
 	    background-image: url(../img/arr-r-black.svg) !important;
+}
+
+.first-slide .row {
+	//background: url('../img/lab/KF0A9177-min.jpg');
+}
+.carousel-inner ul {
+	padding-left: 0;
+}
+.carousel-inner li {
+	margin-bottom: 8px;
+	font-size: 18px;
+	list-style: none;
+	position: relative;
+	padding-left: 30px;
+
+}
+.carousel-inner li:before {
+	content: '—';
+	display: block;
+	color: #00e200;
+	font-size: 24px;
+	position: absolute;
+	top: -3px;
+	left: 0;
+}
+
+.pic-g {
+	    max-height: 270px;
+}
+
+.logo {
+	position: absolute;
+	    top: 0px;
+	    left: 55px;
 }
 
 @media (max-width:991.98px) {
