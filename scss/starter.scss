@@ -92,6 +92,8 @@ $success: #7952b3;
 
 @import "icon-list";
 
+@import 'hamburgers/hamburgers';
+
 body {
   padding: 0;
  // background: #dfdfdf;
@@ -150,6 +152,12 @@ body {
 .top__inner {
 	background-color: rgba(0,0,0,0.4);
 	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+	color: #00e200;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -460,13 +468,13 @@ button,hr,input {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	height: 100%;
-	padding-top: 90px;
+	padding-top: 20px;
 	max-width: 370px;
 	position: relative;
 }
 
 .contacts-footer {
-	height: 600px;
+	height: 350px;
 }
 .carousel-control-next,
 .carousel-control-prev {
@@ -479,7 +487,15 @@ button,hr,input {
 
 .footer-logo {
 	position: relative;
-	top: 90px;
+	top: 50px;
+}
+
+.pic-crop-height {
+	max-height: 450px;
+}
+
+.swiper {
+	margin-bottom: 30px;
 }
 
 .block-botton {
@@ -508,7 +524,7 @@ button,hr,input {
 	//background-image: url(../img/c53ced7f9d1707dde08b960251e842a4.jpg);  
 }
 
-.carousel-item .container {
+.swiper-slide .container {
 	background: rgba(255,255,255,0.8);
 	border-radius: 10px;
 	padding-top: 30px;
@@ -679,9 +695,38 @@ button,hr,input {
 
 	.top__inner {
 		height: auto;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
+		padding-top: 15px;
+		margin-bottom: 10px;
 	}
-
+	.pic-1,
+	.pic-2,
+	.pic-g {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
+	.pic-crop-height {
+		max-height: 200px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+	}
+	.step__name {
+		font-size: 31px;
+		line-height: 38px;
+		margin-bottom: 25px !important;
+	}
+	.logo {
+		left: 10px;
+	}
+	.name {
+		padding-left: 0;
+	}
+	#servicesList {
+		display: none !important;
+	}
 	.top-img {
 		height: 180px;
 		width: 100%;
@@ -725,7 +770,7 @@ button,hr,input {
 		max-width: 320px;
 		top: 0;
 		margin-bottom: 20px;
-		padding-top: 50px;
+		padding-top: 80px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -827,11 +872,10 @@ button,hr,input {
 	.hamburger:active,.hamburger:hover {
 		outline: 0;
 	}
-
-	.logo {
-		z-index: 940;
-		position: relative;
+    .is-show-hamburger .hamburger {
+		position: fixed;
 	}
+
 
 	.mobilePanel {
 		position: fixed;
